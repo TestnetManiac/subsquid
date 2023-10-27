@@ -152,7 +152,7 @@ cd snapshot-squid
 Download Key
 * Navigate to https://app.subsquid.io/quests
 * Download "snapshot squid" (check this picture)
-  ![image](https://github.com/TestnetManiac/subsquid/assets/117708040/8640aba0-094d-44c6-b685-4c91ae6d21d0)
+  ![brave_8Sxc3YWtbH](https://github.com/TestnetManiac/subsquid/assets/117708040/85a90818-38df-4827-a981-e69da5fc8fbe)
 * Move this key file to this folder ``/proc/snapshot-squid/query-gateway/keys``
 Start Docker
 ```
