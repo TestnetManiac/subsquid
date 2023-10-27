@@ -142,3 +142,33 @@ Wait for several minutes, if from quest website showing claim or was 100%, you c
 ```
 docker compose down -v
 ```
+### Run a Snaphot Squid
+Create Folder and Initialize Configuration Project
+```
+cd ~/proc
+sqd init snapshot-squid -t https://github.com/subsquid-quests/snapshot-squid
+cd snapshot-squid
+```
+Download Key
+* Navigate to https://app.subsquid.io/quests
+* Download "snapshot squid" (check this picture)
+  ![image](https://github.com/TestnetManiac/subsquid/assets/117708040/8640aba0-094d-44c6-b685-4c91ae6d21d0)
+* Move this key file to this folder ``/proc/snapshot-squid/query-gateway/keys``
+Start Docker
+```
+docker compose up -d
+```
+Buid Docker
+```
+npm ci
+sqd build
+sqd migration:apply
+```
+Running Docker
+```
+sqd run .
+```
+Wait for several minutes, if from quest website showing claim or was 100%, you can stop process using ``CTRL+C`` then copy this command
+```
+docker compose down -v
+```
